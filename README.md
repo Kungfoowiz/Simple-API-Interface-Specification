@@ -24,13 +24,15 @@ Required: Authorization: Bearer <token>
 
 #### Example Request and Response: 200 OK
 GET /Devaluation?OperationName=Simple&QuantityFactor=10
+
 {
 "message": "Successfully calculated the Devaluation.",
 "devaluation": "100"
 }
 
 #### Example Request and Response: 400 Bad Request
-GET /Devaluation?OperationName=&QuantityFactor=-1  
+GET /Devaluation?OperationName=&QuantityFactor=-1
+
 {
 "error": "Bad Request",
 "message": "Missing or invalid parameters: OperationName or QuantityFactor."
