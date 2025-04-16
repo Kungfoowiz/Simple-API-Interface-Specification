@@ -12,7 +12,7 @@ Required: Authorization: Bearer <token>
 #### Query Parameters
 | Name             | Type    | Required | Description  |
 |------------------|---------|----------|--------------|
-| OperationName    | string  | Yes      | The Operation Name to specify the type of calculation. Possible values: `Simple`, `Advanced`, `Recalculate`. |
+| OperationName    | string  | Yes      | The Operation Name to specify the type of calculation. Possible values: Simple, Advanced, Recalculate. |
 | QuantityFactor   | number  | Yes      | A numeric value used in the Devaluation Calculation. |
 
 #### Responses
