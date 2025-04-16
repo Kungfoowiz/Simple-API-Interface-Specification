@@ -1,7 +1,7 @@
 # Devaluation API Version 1
 
 #### Description
-Calculates a devalued value based on the specified operation name and quantity factor.
+Calculates a Devalued value based on the specified Operation Name and Quantity Factor.
 
 #### Endpoint
 GET /Devaluation
@@ -10,20 +10,20 @@ GET /Devaluation
 Required: Authorization: Bearer <token>
 
 #### Query Parameters
-| **Name**          | **Type**  | **Required** | **Description**                                    |
-|--------------------|-----------|--------------|--------------------------------------------------|
-| `OperationName`    | `string`  | Yes          | The operation name to specify the type of calculation. Possible values: `simple`, `advanced`, `recalculate`. |
-| `QuantityFactor`   | `number`  | Yes          | A numeric value used in the devaluation calculation.  |
+| Name             | Type    | Required | Description  |
+|------------------|---------|----------|--------------|
+| OperationName    | string  | Yes      | The Operation Name to specify the type of calculation. Possible values: `Simple`, `Advanced`, `Recalculate`. |
+| QuantityFactor   | number  | Yes      | A numeric value used in the Devaluation Calculation. |
 
-#### Response
-| **Status Code**         | **Description**                |
-|--------------------------|-------------------------------|
-| `200 OK`                | Calculation successful.        |
-| `400 Bad Request`        | Invalid request parameters.    |
-| `500 Internal Server Error` | A generic server error occurred. |
+#### Responses
+| Status Code                 | Description            |
+|-----------------------------|------------------------|
+| `200 OK`                    | Devaluation Calculation successful. |
+| `400 Bad Request`           | Invalid request parameters. |
+| `500 Internal Server Error` | API Service error. |
 
 #### Example Request and Response: 200 OK
-GET /Devaluation?OperationName=simple&QuantityFactor=10
+GET /Devaluation?OperationName=Simple&QuantityFactor=10
 
 ```json
 {
@@ -43,7 +43,9 @@ GET /Devaluation?OperationName=&QuantityFactor=-1
 
 #### Example Request and Response: 500 Internal Server Error
 Even if the request is valid, this shows when the API Service failed.
+
 GET /Devaluation?OperationName=simple&QuantityFactor=10
+
 ```json
 {
   "error": "Internal Server Error",
