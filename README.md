@@ -1,4 +1,7 @@
-# Devaluation API
+# Devaluation API Version 1
+
+## Description
+Calculates a devalued value based on the specified operation name and quantity factor.
 
 ## Endpoint
 `GET /Devaluation?OperationName=simple&QuantityFactor=10`
@@ -7,9 +10,6 @@ GET /Devaluation?OperationName=exampleOperation&QuantityFactor=10 Authorization:
 
 ## Authentication
 Required: Authorization: Bearer <token>
-
-## Description
-Calculates a devalued value based on the specified operation name and quantity factor.
 
 ## Query Parameters
 | **Name**          | **Type**  | **Required** | **Description**                                    |
@@ -38,6 +38,7 @@ Calculates a devalued value based on the specified operation name and quantity f
 }
 
 ### Example Response: 400 Bad Request
+```json
 {
   "error": "Bad Request",
   "message": "Missing or invalid parameters: OperationName or QuantityFactor."
@@ -45,6 +46,7 @@ Calculates a devalued value based on the specified operation name and quantity f
 
 
 ### Example Response: 500 Internal Server Error
+```json
 {
   "error": "Internal Server Error",
   "message": "An unexpected error occurred on the server."
