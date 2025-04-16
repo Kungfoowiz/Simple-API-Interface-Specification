@@ -4,9 +4,7 @@
 Calculates a devalued value based on the specified operation name and quantity factor.
 
 #### Endpoint
-`GET /Devaluation`
-- **Example Request**:
-`GET /Devaluation?OperationName=advanced&QuantityFactor=10`
+GET /Devaluation
 
 #### Authentication
 Required: Authorization: Bearer <token>
@@ -24,14 +22,18 @@ Required: Authorization: Bearer <token>
 | `400 Bad Request`        | Invalid request parameters.    |
 | `500 Internal Server Error` | A generic server error occurred. |
 
-#### Example Response: 200 OK
+#### Example Request and Response: 200 OK
+GET /Devaluation?OperationName=simple&QuantityFactor=10
+
 ```json
 {
 "result": "Processed value for operation simple with quantity factor 10"
 }
 ```
 
-#### Example Response: 400 Bad Request
+#### Example Request and Response: 400 Bad Request
+GET /Devaluation?OperationName=&QuantityFactor=-1
+
 ```json
 {
   "error": "Bad Request",
@@ -39,7 +41,9 @@ Required: Authorization: Bearer <token>
 }
 ```
 
-#### Example Response: 500 Internal Server Error
+#### Example Request and Response: 500 Internal Server Error
+Even if the request is valid, this shows when the API Service failed.
+GET /Devaluation?OperationName=simple&QuantityFactor=10
 ```json
 {
   "error": "Internal Server Error",
