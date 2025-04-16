@@ -1,8 +1,9 @@
 # Devaluation API Version 1
 
-## Description
+#### Description
 Calculates a Devalued value based on the specified Operation Name and Quantity Factor.
 
+---
 
 ## Example Request and Response: 200 OK
 GET /Devaluation?OperationName=Simple&QuantityFactor=10
@@ -29,6 +30,8 @@ GET /Devaluation?OperationName=simple&QuantityFactor=10
 "error": "API Service Error",  
 "message": "Error ID: 8e6d57e2-4e8d-47c7-bf02-36f06da7c93b"  
 }
+
+---
 
 #### Endpoint
 GET /Devaluation
