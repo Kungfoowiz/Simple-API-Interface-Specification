@@ -9,7 +9,7 @@ Calculates a Devalued value based on the specified Operation Name and Quantity F
 GET /Devaluation?OperationName=Simple&QuantityFactor=10
 
 {  
-"message": "Successfully calculated the Devaluation.",  
+"message": "Devaluation Successful",  
 "result": "100"  
 }
 
@@ -18,7 +18,7 @@ GET /Devaluation?OperationName=&QuantityFactor=-1
 
 {  
 "message": "Bad Request",  
-"result": "Missing or invalid parameters: OperationName or QuantityFactor."  
+"result": "Missing or invalid parameters."  
 }
 
 ## Example Request and Response: 500 Internal Server Error
@@ -42,5 +42,5 @@ Required: Authorization: Bearer <token>
 #### Query Parameters
 | Name             | Type    | Required | Description  |
 |------------------|---------|----------|--------------|
-| OperationName    | string  | Yes      | The Operation Name to specify the type of calculation. Possible values: Simple, Advanced, Recalculate. |
-| QuantityFactor   | number  | Yes      | A numeric value used in the Devaluation Calculation. |
+| OperationName    | String  | Yes      | The Operation Name to specify the type of calculation. Possible values: Simple, Advanced, Recalculate. |
+| QuantityFactor   | Integer | Yes      | A numeric value used in the Devaluation Calculation. |
