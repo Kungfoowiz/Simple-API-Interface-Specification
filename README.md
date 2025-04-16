@@ -21,7 +21,7 @@ GET /Devaluation?OperationName=&QuantityFactor=-1
 "result": "Missing or invalid parameters."  
 }
 
-## Example Request and Response: 500 Internal Server Error
+## Example Request and Response: 500 API Service Error
 Even if the request is valid, this shows when the API Service failed.  
 You can find the error details in the log file using the Error ID.  
 
