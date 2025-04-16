@@ -29,13 +29,7 @@ Required: Authorization: Bearer <token>
 {
 "result": "Processed value for operation simple with quantity factor 10"
 }
-
-
-### Example Response: 200 OK
-```json
-{
-"result": "Processed value for operation exampleOperation with quantity factor 10"
-}
+```
 
 ### Example Response: 400 Bad Request
 ```json
@@ -43,7 +37,7 @@ Required: Authorization: Bearer <token>
   "error": "Bad Request",
   "message": "Missing or invalid parameters: OperationName or QuantityFactor."
 }
-
+```
 
 ### Example Response: 500 Internal Server Error
 ```json
@@ -51,4 +45,4 @@ Required: Authorization: Bearer <token>
   "error": "Internal Server Error",
   "message": "An unexpected error occurred on the server."
 }
-
+```
