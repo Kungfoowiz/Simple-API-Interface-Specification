@@ -1,7 +1,7 @@
 # Devaluation API Version 1
 
 #### Description
-Calculates a Devalued value based on the specified Operation Name and Quantity Factor.
+Calculates a Devaluation based on the specified Operation Name and Quantity Factor.
 
 ---
 
