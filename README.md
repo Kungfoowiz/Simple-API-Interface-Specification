@@ -4,9 +4,9 @@
 Calculates a devalued value based on the specified operation name and quantity factor.
 
 #### Endpoint
-`GET /Devaluation?OperationName=simple&QuantityFactor=10`
+`GET /Devaluation`
 - **Example Request**:
-GET /Devaluation?OperationName=advanced&QuantityFactor=10
+`GET /Devaluation?OperationName=advanced&QuantityFactor=10`
 
 #### Authentication
 Required: Authorization: Bearer <token>
